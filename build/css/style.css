@@ -1457,7 +1457,7 @@ button,
   font-size: 54px;
   line-height: 66px;
   color: #f9fbfd;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 0 30px 0;
 }
 
@@ -1470,7 +1470,7 @@ button,
 }
 
 .promo {
-  padding: 283px 0 283px 198px;
+  padding: 283px 198px;
   background-color: #5b95c9;
   background-position: 50% 100%;
   background-size: cover;
@@ -1483,7 +1483,54 @@ button,
   font-size: 20px;
   line-height: 24px;
   color: #f9fbfd;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.travels__inner {
+  padding: 120px 0 145px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.travels__description {
+  padding-top: 66px;
+  width: 46.5454545455%;
+}
+
+.travels__description p {
+  margin: 0;
+  font-family: "Montserrat Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #011c40;
+}
+
+.travels__title {
+  margin: 0 0 40px 0;
+}
+
+.travels__picture {
+  width: 48.277%;
+}
+
+.travels__image {
+  width: 100%;
+}
+
+.title {
+  font-family: "Montserrat SemiBold", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #011c40;
 }
 
 /* @mixin hover-focus {
@@ -1576,7 +1623,25 @@ button,
   }
 
   .promo {
-    padding: 280px 0 280px 45px;
+    padding: 280px 45px;
+  }
+
+  .travels__inner {
+    padding: 100px 0;
+  }
+
+  .travels__description {
+    padding-top: 0;
+    width: 47.7876106195%;
+  }
+
+  .travels__picture {
+    max-width: 324px;
+  }
+
+  .title {
+    font-size: 26px;
+    line-height: 36px;
   }
 }
 
@@ -1711,7 +1776,38 @@ button,
   }
 
   .promo {
-    padding: 185px 0 185px 15px;
+    padding: 185px 15px;
+  }
+
+  .travels__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: 65px 0 85px;
+  }
+
+  .travels__description {
+    padding-bottom: 50px;
+    width: 100%;
+  }
+
+  .travels__picture {
+    min-width: 100%;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 34px;
   }
 }
 
