@@ -1310,7 +1310,7 @@ button,
   border: none;
   background-color: transparent;
   z-index: 100;
-  padding: 5px;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1458,7 +1458,7 @@ button,
   line-height: 66px;
   color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  margin: 0 0 30px 0;
+  margin: 0 0 12px 0;
 }
 
 .webp-true .promo {
@@ -1470,7 +1470,7 @@ button,
 }
 
 .promo {
-  padding: 283px 198px;
+  padding: 270px 0 286px 198px;
   background-color: #5b95c9;
   background-position: 50% 100%;
   background-size: cover;
@@ -1487,7 +1487,7 @@ button,
 }
 
 .travels__inner {
-  padding: 120px 0 145px;
+  padding: 112px 0 145px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1500,7 +1500,7 @@ button,
 }
 
 .travels__description {
-  padding-top: 66px;
+  padding-top: 56px;
   width: 46.5454545455%;
 }
 
@@ -1514,11 +1514,11 @@ button,
 }
 
 .travels__title {
-  margin: 0 0 40px 0;
+  margin: 0 0 24px 0;
 }
 
 .travels__picture {
-  width: 48.277%;
+  width: 48.28%;
 }
 
 .travels__image {
@@ -1580,7 +1580,16 @@ button,
   }
 
   .main-header__inner {
-    padding: 25px 0;
+    padding: 28px 0 25px;
+  }
+
+  .navigation__list {
+    grid-column-gap: 24px;
+  }
+
+  .navigation__link {
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .main-footer__inner {
@@ -1623,11 +1632,11 @@ button,
   }
 
   .promo {
-    padding: 280px 45px;
+    padding: 268px 45px 275px;
   }
 
   .travels__inner {
-    padding: 100px 0;
+    padding: 91px 0;
   }
 
   .travels__description {
@@ -1635,8 +1644,13 @@ button,
     width: 47.7876106195%;
   }
 
+  .travels__title {
+    margin: 0 0 16px 0;
+  }
+
   .travels__picture {
     max-width: 324px;
+    padding-top: 9px;
   }
 
   .title {
@@ -1704,11 +1718,11 @@ button,
   }
 
   .navigation__inner--js-active {
-    right: 0;
+    right: -1px;
   }
 
   .navigation__inner svg {
-    margin-bottom: 33px;
+    margin-bottom: 38px;
   }
 
   .navigation__list {
@@ -1716,7 +1730,8 @@ button,
     grid-template-columns: auto;
     -ms-grid-rows: (auto)[4];
     grid-template-rows: repeat(4, auto);
-    grid-row-gap: 10px;
+    grid-row-gap: 18px;
+    padding-left: 5px;
   }
 
   .navigation__link {
@@ -1759,6 +1774,7 @@ button,
   }
 
   .main-title {
+    margin: 0 0 11px 0;
     font-size: 36px;
     line-height: 45px;
   }
@@ -1776,7 +1792,7 @@ button,
   }
 
   .promo {
-    padding: 185px 15px;
+    padding: 176px 15px 179px;
   }
 
   .travels__inner {
@@ -1790,12 +1806,16 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding: 65px 0 85px;
+    padding: 57px 0 85px;
   }
 
   .travels__description {
-    padding-bottom: 50px;
+    padding-bottom: 34px;
     width: 100%;
+  }
+
+  .travels__title {
+    margin: 0 0 15px 0;
   }
 
   .travels__picture {
