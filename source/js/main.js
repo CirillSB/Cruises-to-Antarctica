@@ -1,7 +1,18 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
-
+import {
+  iosVhFix
+} from './utils/ios-vh-fix';
+import {
+  initModals
+} from './modules/modals/init-modals';
+import {
+  Form
+} from './modules/form-validate/form';
+import {
+  showLogo
+} from './modules/show-logo';
+import {
+  showMenu
+} from './modules/show-menu';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -10,8 +21,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
   // Modules
+  showLogo();
+  showMenu();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
