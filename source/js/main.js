@@ -13,11 +13,15 @@ import {
 import {
   showMenu
 } from './modules/show-menu';
+import {
+  testWebP
+} from './utils/test-webp';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
+  testWebP();
   // ---------------------------------
 
   iosVhFix();

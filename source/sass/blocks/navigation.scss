@@ -47,6 +47,15 @@
   line-height: 20px;
   color: $color-BlackSqueeze;
 
+  @include hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        border-radius: 3%;
+        outline: 3px solid $color-BlackSqueeze;
+      }
+    }
+  }
+
   @include vp-767 {
     display: block;
     font-size: 18px;
