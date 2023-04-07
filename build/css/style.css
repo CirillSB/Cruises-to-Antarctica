@@ -1471,7 +1471,7 @@ button,
 
 .promo {
   padding: 270px 0 286px 198px;
-  background-color: #5b95c9;
+  background-color: #003770;
   background-position: 50% 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1531,6 +1531,63 @@ button,
   font-size: 28px;
   line-height: 42px;
   color: #011c40;
+}
+
+.medium-title {
+  font-family: "Montserrat Medium", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #011c40;
+}
+
+.webp-true .advantages {
+  background-image: url("../img/background2-desktop@1x.webp");
+}
+
+.webp-false .advantages {
+  background-image: url("../img/background2-desktop@1x.jpg");
+}
+
+.advantages {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.advantages__title {
+  margin: 0 0 49px 0;
+  text-align: center;
+}
+
+.advantages__inner {
+  padding: 110px 0 120px;
+}
+
+.advantages-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3.4482758621%;
+  grid-auto-flow: row;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.advantages-list__item {
+  background-color: #f9fbfd;
+  padding: 30px 30px 45px;
+}
+
+.advantages-list__item p {
+  line-height: 20px;
+  color: #011c40;
+  margin: 0;
+}
+
+.advantages-list__title {
+  margin: 12px 0 8px;
 }
 
 /* @mixin hover-focus {
@@ -1636,7 +1693,7 @@ button,
   }
 
   .travels__inner {
-    padding: 91px 0;
+    padding: 91px 0 93px;
   }
 
   .travels__description {
@@ -1657,6 +1714,46 @@ button,
     font-size: 26px;
     line-height: 36px;
   }
+
+  .medium-title {
+    line-height: 25px;
+  }
+
+  .webp-true .advantages {
+    background-image: url("../img/background2-tablet@1x.webp");
+  }
+
+  .webp-false .advantages {
+    background-image: url("../img/background2-tablet@1x.jpg");
+  }
+
+  .advantages__title {
+    margin: 0 0 51px 0;
+  }
+
+  .advantages__inner {
+    padding: 91px 0 100px;
+  }
+
+  .advantages-list {
+    grid-column-gap: 4.4247787611%;
+  }
+
+  .advantages-list__item {
+    padding: 25px 18px 20px;
+  }
+
+  .advantages-list__item svg {
+    -webkit-transform: scale(0.8181818182);
+    -ms-transform: scale(0.8181818182);
+    transform: scale(0.8181818182);
+    margin-top: -2px;
+    margin-left: -2px;
+  }
+
+  .advantages-list__title {
+    margin: 7px 0 11px;
+  }
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 144dpi) and (min-resolution: 1.5dppx), (max-width: 1023px) and (min-resolution: 1.5dppx) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) and (min-resolution: 1.5dppx) {
@@ -1666,6 +1763,20 @@ button,
 
   .webp-false .promo {
     background-image: url("../img/background-tablet@2x.jpg");
+  }
+
+  .webp-true .advantages {
+    background-image: url("../img/background2-tablet@2x.webp");
+  }
+
+  .webp-false .advantages {
+    background-image: url("../img/background2-tablet@2x.jpg");
+  }
+}
+
+@media (max-width: 1023px) and (max-width: 767px) {
+  .advantages-list__item svg {
+    margin-left: -4px;
   }
 }
 
@@ -1829,6 +1940,38 @@ button,
     font-size: 24px;
     line-height: 34px;
   }
+
+  .webp-true .advantages {
+    background-image: url("../img/background2-mobile@1x.webp");
+  }
+
+  .webp-false .advantages {
+    background-image: url("../img/background2-mobile@1x.jpg");
+  }
+
+  .advantages__title {
+    margin: 0 0 31px 0;
+  }
+
+  .advantages__inner {
+    padding: 58px 0 65px;
+  }
+
+  .advantages-list {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    -ms-grid-rows: (auto)[3];
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 30px;
+  }
+
+  .advantages-list__item {
+    padding: 24px 20px 20px;
+  }
+
+  .advantages-list__title {
+    margin: 10px 0 8px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1902,6 +2045,14 @@ button,
   .webp-false .promo {
     background-image: url("../img/background-mobile@2x.jpg");
   }
+
+  .webp-true .advantages {
+    background-image: url("../img/background2-mobile@2x.webp");
+  }
+
+  .webp-false .advantages {
+    background-image: url("../img/background2-mobile@2x.jpg");
+  }
 }
 
 @media (hover: hover) {
@@ -1942,5 +2093,13 @@ button,
 
   .webp-false .promo {
     background-image: url("../img/background-desktop@2x.jpg");
+  }
+
+  .webp-true .advantages {
+    background-image: url("../img/background2-desktop@2x.webp");
+  }
+
+  .webp-false .advantages {
+    background-image: url("../img/background2-desktop@2x.jpg");
   }
 }
