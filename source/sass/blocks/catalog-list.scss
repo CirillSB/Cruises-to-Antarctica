@@ -1,0 +1,41 @@
+.catalog-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-column-gap: calc(30 / 1160 * 100%);
+  grid-row-gap: 30px;
+}
+
+.catalog-list__item {
+  position: relative;
+  width: 100%;
+
+  p {
+    position: absolute;
+    bottom: 22px;
+    left: 30px;
+    margin: 0;
+    font-family: $ff-links;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-BlackSqueeze;
+  }
+
+  @include hover-focus {
+  @media (hover: hover) {
+    &:hover:not(.focus-visible) {
+    	.card {
+    		      opacity: 1;
+  visibility: visible;
+    	}
+
+    }
+  }
+
+  &.focus-visible:focus {
+    opacity: 0.5;
+  visibility: visible;
+  }
+}
+}
