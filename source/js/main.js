@@ -19,6 +19,9 @@ import {
 import {
   setFocusCard
 } from './modules/set-focus-card';
+import {
+  showCards
+} from './modules/show-cards';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -32,6 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
   showLogo();
   showMenu();
   setFocusCard();
+  showCards();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

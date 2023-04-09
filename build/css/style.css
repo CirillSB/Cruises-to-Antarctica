@@ -1587,7 +1587,7 @@ button,
 }
 
 .catalog__inner {
-  padding: 85px 0;
+  padding: 85px 0 118px;
 }
 
 .catalog__title {
@@ -1614,6 +1614,7 @@ button,
   grid-template-rows: repeat(2, auto);
   grid-column-gap: 2.5862068966%;
   grid-row-gap: 30px;
+  grid-auto-flow: row;
 }
 
 .catalog-list__item {
@@ -1700,7 +1701,7 @@ button,
   background-color: #f9fbfd;
   width: 80.7692307692%;
   text-align: center;
-  padding: 10px 0px 9px;
+  padding: 10px 0 9px;
 }
 
 .focus-visible {
@@ -1871,6 +1872,35 @@ button,
 
   .advantages-list__title {
     margin: 7px 0 11px;
+  }
+
+  .catalog__inner {
+    padding: 91px 0 100px;
+  }
+
+  .catalog__title {
+    margin: 0 0 51px 0;
+  }
+
+  .catalog-list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (auto)[4];
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 30px;
+  }
+
+  .catalog-list__item p {
+    bottom: 27px;
+    left: 35px;
+  }
+
+  .card {
+    padding: 31px 36px;
+  }
+
+  .card__content {
+    height: 86.5%;
   }
 }
 
@@ -2072,7 +2102,7 @@ button,
   }
 
   .advantages__inner {
-    padding: 58px 0 65px;
+    padding: 58px 0 67px;
   }
 
   .advantages-list {
@@ -2089,6 +2119,34 @@ button,
 
   .advantages-list__title {
     margin: 10px 0 8px;
+  }
+
+  .catalog__inner {
+    padding: 58px 0 65px;
+  }
+
+  .catalog__title {
+    margin: 0 0 31px 0;
+  }
+
+  .catalog__list {
+    padding: 0 10px;
+  }
+
+  .catalog-list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: (auto)[8];
+    grid-template-rows: repeat(8, auto);
+  }
+
+  .catalog-list__item p {
+    bottom: 17px;
+    left: 25px;
+  }
+
+  .card__link {
+    width: 77.3462783172%;
   }
 }
 
