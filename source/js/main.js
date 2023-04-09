@@ -16,6 +16,9 @@ import {
 import {
   testWebP
 } from './utils/test-webp';
+import {
+  setFocusCard
+} from './modules/set-focus-card';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -28,6 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   showLogo();
   showMenu();
+  setFocusCard();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

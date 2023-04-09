@@ -23,19 +23,38 @@
   }
 
   @include hover-focus {
-  @media (hover: hover) {
-    &:hover:not(.focus-visible) {
-    	.card {
-    		      opacity: 1;
-  visibility: visible;
-    	}
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        .card {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
 
+    &.focus-visible:focus {
+      .card {
+        opacity: 1;
+        visibility: visible;
+      }
     }
   }
 
-  &.focus-visible:focus {
-    opacity: 0.5;
-  visibility: visible;
-  }
-}
+  // @include hover {
+  //   @media (hover: hover) {
+  //     &:hover:not(.focus-visible) {
+  //       opacity: 1;
+  //       visibility: visible;
+  //       border: 10px solid red;
+  //     }
+  //   }
+  // }
+
+  // @include focus {
+  //   &.focus-visible:focus {}
+  // }
+
+  // @include active {
+  //   &.focus-visible:active {}
+  // }
 }

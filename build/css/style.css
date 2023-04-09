@@ -633,10 +633,6 @@ button,
   transition: none !important;
 }
 
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: none;
-}
-
 .container {
   width: 100%;
   max-width: 1920px;
@@ -1637,8 +1633,8 @@ button,
   color: #f9fbfd;
 }
 
-.catalog-list__item.focus-visible:focus.focus-visible:focus {
-  opacity: 0.5;
+.catalog-list__item.focus-visible:focus.focus-visible:focus .card {
+  opacity: 1;
   visibility: visible;
 }
 
@@ -1705,6 +1701,11 @@ button,
   width: 80.7692307692%;
   text-align: center;
   padding: 10px 0px 9px;
+}
+
+.focus-visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* @mixin hover-focus {
@@ -2185,8 +2186,8 @@ button,
     background-color: rgba(0, 0, 0, 0.4);
   }
 
-  .catalog-list__item:hover:not(.focus-visible).focus-visible:focus {
-    opacity: 0.5;
+  .catalog-list__item:hover:not(.focus-visible).focus-visible:focus .card {
+    opacity: 1;
     visibility: visible;
   }
 
