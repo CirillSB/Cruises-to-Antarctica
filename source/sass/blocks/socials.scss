@@ -8,7 +8,15 @@
   grid-column-gap: 27px;
 
   @include vp-1023 {
-    grid-column-gap: 22px;
+    grid-column-gap: 18px;
+    position: relative;
+    top: 0;
+    left: 1px;
+  }
+
+  @include vp-767 {
+    top: -2px;
+    left: -1px;
   }
 }
 
@@ -29,5 +37,11 @@
         outline: 3px solid $color-BlackSqueeze;
       }
     }
+  }
+}
+
+.socials__svg {
+  @include vp-1023 {
+    transform: scale(0.8);
   }
 }

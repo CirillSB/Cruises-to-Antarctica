@@ -1297,9 +1297,9 @@ button,
 
 .logo {
   display: inline-block;
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .menu-button {
@@ -1366,6 +1366,10 @@ button,
   display: none;
 }
 
+.only-desktop-hidden {
+  display: none;
+}
+
 .main-footer {
   background-color: #011c40;
 }
@@ -1380,7 +1384,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 61px 0 57px;
+  padding: 51px 0 49px;
 }
 
 .main-footer-navigation {
@@ -1498,6 +1502,7 @@ button,
 
 .travels__description {
   padding-top: 56px;
+  padding-right: 1%;
   width: 46.5454545455%;
 }
 
@@ -1730,9 +1735,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding: 50px 0;
 }
 
@@ -1744,13 +1749,15 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
   padding-left: 60px;
+  padding-top: 170px;
+  width: 50%;
 }
 
 .booking__description p {
@@ -1759,6 +1766,7 @@ button,
   line-height: 27px;
   color: #011c40;
   margin: 0;
+  padding-right: 25%;
 }
 
 .booking__title {
@@ -1914,6 +1922,73 @@ button,
   cursor: pointer;
 }
 
+.contacts__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (48.275862069%)[2];
+  grid-template-columns: repeat(2, 48.275862069%);
+  grid-column-gap: 3.4482758621%;
+  padding: 120px 0;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  min-height: 306px;
+}
+
+.address {
+  padding-top: 75px;
+  padding-left: 10.7%;
+}
+
+.address p {
+  font-family: "Montserrat Medium", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #011c40;
+  margin: 0 0 27px 0;
+}
+
+.address__data {
+  font-family: "Montserrat Regular", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #011c40;
+  margin-bottom: 20px;
+}
+
+.address__data::before {
+  content: url("../img/sprite/point.svg");
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  width: 18px;
+  height: 22px;
+  margin-right: 5px;
+}
+
+.address__link-phone {
+  font-family: "Montserrat Regular", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #011c40;
+}
+
+.address__link-phone::before {
+  content: url("../img/sprite/phone.svg");
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1973,8 +2048,12 @@ button,
     line-height: 17px;
   }
 
+  .only-desktop-hidden {
+    display: block;
+  }
+
   .main-footer__inner {
-    padding: 52px 0;
+    padding: 47px 0 49px;
   }
 
   .main-footer-navigation {
@@ -1991,7 +2070,16 @@ button,
   }
 
   .socials__list {
-    grid-column-gap: 22px;
+    grid-column-gap: 18px;
+    position: relative;
+    top: 0;
+    left: 1px;
+  }
+
+  .socials__svg {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
   }
 
   .main-title {
@@ -2021,12 +2109,13 @@ button,
   }
 
   .travels__description {
-    padding-top: 0;
+    padding: 0;
     width: 47.7876106195%;
   }
 
   .travels__title {
     margin: 0 0 16px 0;
+    padding-right: 7%;
   }
 
   .travels__picture {
@@ -2132,11 +2221,12 @@ button,
 
   .booking__description {
     padding: 0;
+    width: 100%;
   }
 
   .booking__description p {
     margin-bottom: 3px;
-    width: 100%;
+    padding: 0 144px;
     text-align: center;
   }
 
@@ -2145,10 +2235,41 @@ button,
     font-size: 34px;
     line-height: 51px;
     padding-right: 0;
+    width: 100%;
+    text-align: center;
   }
 
   .booking__form-wrapper {
     padding: 50px 20.2064896755% 100px;
+  }
+
+  .contacts__inner {
+    -ms-grid-columns: (47.6470588235%)[2];
+    grid-template-columns: repeat(2, 47.6470588235%);
+    grid-column-gap: 4.4117647059%;
+    padding: 100px 0;
+  }
+
+  .map {
+    height: 335px;
+  }
+
+  .address {
+    padding-top: 67px;
+    padding-left: 0;
+  }
+
+  .address p {
+    margin: 0 0 21px 0;
+  }
+
+  .address__data::before {
+    top: 10px;
+    left: 1px;
+  }
+
+  .address__span {
+    padding-left: 27px;
   }
 }
 
@@ -2272,7 +2393,7 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    padding: 40px 0;
+    padding: 40px 0 36px;
   }
 
   .main-footer-navigation {
@@ -2284,8 +2405,13 @@ button,
     grid-template-columns: auto;
     -ms-grid-rows: (auto)[4];
     grid-template-rows: repeat(4, auto);
-    grid-row-gap: 23px;
-    padding: 30px 0;
+    grid-row-gap: 8px;
+    padding: 22px 0 23px;
+  }
+
+  .socials__list {
+    top: -2px;
+    left: -1px;
   }
 
   .main-title {
@@ -2420,6 +2546,8 @@ button,
   .booking__description p {
     font-size: 16px;
     line-height: 22px;
+    padding: 0;
+    width: 100%;
   }
 
   .booking__title {
@@ -2427,6 +2555,7 @@ button,
     line-height: 31px;
     text-align: center;
     margin: 0 0 14px;
+    padding: 0 14%;
   }
 
   .booking__break {
@@ -2435,7 +2564,7 @@ button,
   }
 
   .booking__form-wrapper {
-    padding: 31px 0 100px;
+    padding: 31px 0 65px;
   }
 
   .booking-form {
@@ -2461,6 +2590,34 @@ button,
     min-width: 20px;
     height: 20px;
     margin-right: 8px;
+  }
+
+  .contacts__inner {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    -ms-grid-rows: (auto)[2];
+    grid-template-rows: repeat(2, auto);
+    padding: 0 0 65px;
+  }
+
+  .contacts__map-wrapper {
+    grid-row: -1/-2;
+  }
+
+  .map {
+    height: 316px;
+  }
+
+  .address {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    padding: 58px 0 37px;
+  }
+
+  .address__data::before {
+    top: 11px;
+    left: 0;
   }
 }
 

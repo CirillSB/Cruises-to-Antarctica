@@ -1,6 +1,7 @@
 export const showLogo = () => {
   const logo = document.querySelectorAll('.logo');
   const logoImage = document.querySelectorAll('.logo__image');
+  const social = document.querySelectorAll('.socials__svg');
   if (window.matchMedia('(max-width: 1023px)').matches) {
     for (let i = 0; i < logo.length; i++) {
       logo[i].style.width = 38;

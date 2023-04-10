@@ -22,6 +22,9 @@ import {
 import {
   showCards
 } from './modules/show-cards';
+import {
+  initMap
+} from './modules/init-map';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -34,8 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   showLogo();
   showMenu();
-  setFocusCard();
-  showCards();
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -45,6 +47,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    setFocusCard();
+    showCards();
+    initMap();
   });
 });
 

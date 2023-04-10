@@ -1,0 +1,81 @@
+.address {
+  padding-top: 75px;
+  padding-left: 10.7%;
+
+  @include vp-1023 {
+    padding-top: 67px;
+    padding-left: 0;
+  }
+
+  @include vp-767 {
+    grid-row: 1 / 2;
+    padding: 58px 0 37px;
+  }
+
+  p {
+    font-family: $ff-links;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-Midnight;
+    margin: 0 0 27px 0;
+
+    @include vp-1023 {
+      margin: 0 0 21px 0;
+    }
+  }
+}
+
+.address__data {
+  font-family: $ff-text;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-Midnight;
+  margin-bottom: 20px;
+
+  &::before {
+    content: url('../img/sprite/point.svg');
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 18px;
+    height: 22px;
+    margin-right: 5px;
+
+    @include vp-1023 {
+      top: 10px;
+      left: 1px;
+    }
+
+    @include vp-767 {
+      top: 11px;
+      left: 0;
+    }
+  }
+}
+
+.address__span {
+  @include vp-1023 {
+    padding-left: 27px;
+  }
+}
+
+.address__link-phone {
+  font-family: $ff-text;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-Midnight;
+
+  &::before {
+    content: url('../img/sprite/phone.svg');
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,24 @@
+.contacts__inner {
+  display: grid;
+  grid-template-columns: repeat(2, calc(560 / 1160 * 100%));
+  grid-column-gap: calc(40 / 1160 * 100%);
+  padding: 120px 0;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, calc(324 / 680 * 100%));
+    grid-column-gap: calc(30 / 680 * 100%);
+    padding: 100px 0;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, auto);
+    padding: 0 0 65px;
+  }
+}
+
+.contacts__map-wrapper {
+  @include vp-767 {
+    grid-row: -1 / -2;
+  }
+}
