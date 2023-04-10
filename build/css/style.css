@@ -1786,8 +1786,8 @@ button,
 
 .booking-form {
   background: #011c40;
-  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1876,7 +1876,7 @@ button,
   cursor: pointer;
 }
 
-.booking-form__checkbox-label:before {
+.booking-form__checkbox-label::before {
   content: "";
   display: block;
   min-width: 18px;
@@ -1886,20 +1886,20 @@ button,
   cursor: pointer;
 }
 
-.booking-form__checkbox-label:after {
+.booking-form__checkbox-label::after {
   position: absolute;
   left: 9px;
   top: 33%;
   width: 10px;
   height: 6px;
-  border-bottom: 2px solid #101A56;
-  border-left: 2px solid #101A56;
+  border-bottom: 2px solid #101a56;
+  border-left: 2px solid #101a56;
   -webkit-transform: translate(-50%) rotate(-45deg);
   -ms-transform: translate(-50%) rotate(-45deg);
   transform: translate(-50%) rotate(-45deg);
 }
 
-.booking-form__checkbox:checked + .booking-form__checkbox-label:after {
+.booking-form__checkbox:checked + .booking-form__checkbox-label::after {
   content: "";
 }
 
@@ -2457,7 +2457,7 @@ button,
     margin-bottom: 27px;
   }
 
-  .booking-form__checkbox-label:before {
+  .booking-form__checkbox-label::before {
     min-width: 20px;
     height: 20px;
     margin-right: 8px;
