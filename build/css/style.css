@@ -438,6 +438,7 @@ html {
   line-height: 24px;
   font-family: "Montserrat Regular", "Arial", sans-serif;
   color: #000000;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1709,6 +1710,210 @@ button,
   visibility: visible;
 }
 
+.webp-true .booking {
+  background-image: url("../img/background3-desktop@1x.webp");
+}
+
+.webp-false .booking {
+  background-image: url("../img/background3-desktop@1x.jpg");
+}
+
+.booking {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.booking__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.booking__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding-left: 60px;
+}
+
+.booking__description p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #011c40;
+  margin: 0;
+}
+
+.booking__title {
+  font-family: "Montserrat Bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #011c40;
+  margin: -7px 0 8px;
+  padding-right: 15px;
+}
+
+.booking__form-wrapper {
+  padding: 0 60px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.booking-form {
+  background: #011c40;
+  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 44px 50px 50px;
+  max-width: 403px;
+}
+
+.booking-form p {
+  margin: 0 0 27px 0;
+  font-family: "Montserrat Medium", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #f9fbfd;
+}
+
+.booking-form__input {
+  padding: 13px 16px 14px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.booking-form__input::-webkit-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.booking-form__input::-moz-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.booking-form__input:-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.booking-form__input::-ms-input-placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.booking-form__input::placeholder {
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.booking-form__checkbox-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.booking-form__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.booking-form__checkbox-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 10px;
+  line-height: 13px;
+  color: #f9fbfd;
+  cursor: pointer;
+}
+
+.booking-form__checkbox-label:before {
+  content: "";
+  display: block;
+  min-width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  background-color: #f9fbfd;
+  cursor: pointer;
+}
+
+.booking-form__checkbox-label:after {
+  position: absolute;
+  left: 9px;
+  top: 33%;
+  width: 10px;
+  height: 6px;
+  border-bottom: 2px solid #101A56;
+  border-left: 2px solid #101A56;
+  -webkit-transform: translate(-50%) rotate(-45deg);
+  -ms-transform: translate(-50%) rotate(-45deg);
+  transform: translate(-50%) rotate(-45deg);
+}
+
+.booking-form__checkbox:checked + .booking-form__checkbox-label:after {
+  content: "";
+}
+
+.booking-form__button {
+  border: none;
+  font-family: "Montserrat SemiBold", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011c40;
+  padding: 11px 0;
+  cursor: pointer;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1902,6 +2107,49 @@ button,
   .card__content {
     height: 86.5%;
   }
+
+  .webp-true .booking {
+    background-image: url("../img/background3-tablet@1x.webp");
+  }
+
+  .webp-false .booking {
+    background-image: url("../img/background3-tablet@1x.jpg");
+  }
+
+  .booking__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 88px 0 0;
+  }
+
+  .booking__description {
+    padding: 0;
+  }
+
+  .booking__description p {
+    margin-bottom: 3px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .booking__title {
+    margin: 0 0 4px;
+    font-size: 34px;
+    line-height: 51px;
+    padding-right: 0;
+  }
+
+  .booking__form-wrapper {
+    padding: 50px 20.2064896755% 100px;
+  }
 }
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 144dpi) and (min-resolution: 1.5dppx), (max-width: 1023px) and (min-resolution: 1.5dppx) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) and (min-resolution: 1.5dppx) {
@@ -1919,6 +2167,14 @@ button,
 
   .webp-false .advantages {
     background-image: url("../img/background2-tablet@2x.jpg");
+  }
+
+  .webp-true .booking {
+    background-image: url("../img/background3-tablet@2x.webp");
+  }
+
+  .webp-false .booking {
+    background-image: url("../img/background3-tablet@2x.jpg");
   }
 }
 
@@ -2148,6 +2404,64 @@ button,
   .card__link {
     width: 77.3462783172%;
   }
+
+  .webp-true .booking {
+    background-image: url("../img/background3-mobile@1x.webp");
+  }
+
+  .webp-false .booking {
+    background-image: url("../img/background3-mobile@1x.jpg");
+  }
+
+  .booking__inner {
+    padding: 59px 0 0;
+  }
+
+  .booking__description p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .booking__title {
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    margin: 0 0 14px;
+  }
+
+  .booking__break {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .booking__form-wrapper {
+    padding: 31px 0 100px;
+  }
+
+  .booking-form {
+    min-width: 290px;
+    padding: 34px 30px 40px;
+  }
+
+  .booking-form p {
+    text-align: center;
+    line-height: 25px;
+    margin: 0 0 29px 0;
+  }
+
+  .booking-form__input:last-of-type {
+    margin-bottom: 17px;
+  }
+
+  .booking-form__checkbox-wrapper {
+    margin-bottom: 27px;
+  }
+
+  .booking-form__checkbox-label:before {
+    min-width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2229,6 +2543,14 @@ button,
   .webp-false .advantages {
     background-image: url("../img/background2-mobile@2x.jpg");
   }
+
+  .webp-true .booking {
+    background-image: url("../img/background3-mobile@2x.webp");
+  }
+
+  .webp-false .booking {
+    background-image: url("../img/background3-mobile@2x.jpg");
+  }
 }
 
 @media (hover: hover) {
@@ -2292,5 +2614,13 @@ button,
 
   .webp-false .advantages {
     background-image: url("../img/background2-desktop@2x.jpg");
+  }
+
+  .webp-true .booking {
+    background-image: url("../img/background3-desktop@2x.webp");
+  }
+
+  .webp-false .booking {
+    background-image: url("../img/background3-desktop@2x.jpg");
   }
 }

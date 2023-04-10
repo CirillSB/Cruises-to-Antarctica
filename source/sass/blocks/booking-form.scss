@@ -1,0 +1,114 @@
+.booking-form {
+  background: $color-Midnight;
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 44px 50px 50px;
+  max-width: 403px;
+
+  @include vp-767 {
+    min-width: 290px;
+    padding: 34px 30px 40px;
+  }
+
+  p {
+    margin: 0 0 27px 0;
+    font-family: $ff-links;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-BlackSqueeze;
+
+    @include vp-767 {
+      text-align: center;
+      line-height: 25px;
+      margin: 0 0 29px 0;
+    }
+  }
+}
+
+.booking-form__input {
+  padding: 13px 16px 14px;
+  margin-bottom: 20px;
+  border: none;
+
+  @include vp-767 {
+    &:last-of-type {
+      margin-bottom: 17px;
+    }
+  }
+
+  &::placeholder {
+    color: rgba(1, 28, 64, 0.7);
+  }
+}
+
+.booking-form__checkbox-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+
+  @include vp-767 {
+    margin-bottom: 27px;
+  }
+}
+
+.booking-form__checkbox {
+  appearance: none;
+}
+
+.booking-form__checkbox-label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 10px;
+  line-height: 13px;
+  color: $color-BlackSqueeze;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    min-width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background-color: $color-BlackSqueeze;
+    cursor: pointer;
+
+    @include vp-767 {
+      min-width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    left: 9px;
+    top: 33%;
+    width: 10px;
+    height: 6px;
+    border-bottom: 2px solid $color-Sapphire;
+    border-left: 2px solid $color-Sapphire;
+    transform: translate(-50%) rotate(-45deg);
+  }
+}
+
+.booking-form__checkbox:checked + .booking-form__checkbox-label::after {
+  content: "";
+}
+
+.booking-form__button {
+  border: none;
+  font-family: $ff-title;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-Midnight;
+  padding: 11px 0;
+  cursor: pointer;
+}
