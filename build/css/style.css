@@ -1822,30 +1822,94 @@ button,
   color: #f9fbfd;
 }
 
-.booking-form__input {
-  padding: 13px 16px 14px;
+.booking-form input {
+  padding: 13px 16px 9px;
   margin-bottom: 20px;
   border: none;
+  line-height: 21px;
+  color: #011c40;
 }
 
-.booking-form__input::-webkit-input-placeholder {
+.booking-form input::-webkit-input-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
-.booking-form__input::-moz-placeholder {
+.booking-form input::-moz-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
-.booking-form__input:-ms-input-placeholder {
+.booking-form input:-ms-input-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
-.booking-form__input::-ms-input-placeholder {
+.booking-form input::-ms-input-placeholder {
   color: rgba(1, 28, 64, 0.7);
 }
 
-.booking-form__input::placeholder {
+.booking-form input::placeholder {
   color: rgba(1, 28, 64, 0.7);
+}
+
+.booking-form input[type=checkbox] {
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.booking-form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 10px;
+  line-height: 13px;
+  color: #f9fbfd;
+  cursor: pointer;
+}
+
+.booking-form label::before {
+  content: "";
+  display: block;
+  min-width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  background-color: #f9fbfd;
+  cursor: pointer;
+}
+
+.booking-form label::after {
+  position: absolute;
+  left: 9px;
+  top: 33%;
+  width: 10px;
+  height: 6px;
+  border-bottom: 2px solid #101a56;
+  border-left: 2px solid #101a56;
+  -webkit-transform: translate(-50%) rotate(-45deg);
+  -ms-transform: translate(-50%) rotate(-45deg);
+  transform: translate(-50%) rotate(-45deg);
+}
+
+.booking-form button {
+  border: none;
+  font-family: "Montserrat SemiBold", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011c40;
+  padding: 11px 0;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked + label::after {
+  content: "";
 }
 
 .booking-form__checkbox-wrapper {
@@ -1862,66 +1926,6 @@ button,
   margin-bottom: 30px;
 }
 
-.booking-form__checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.booking-form__checkbox-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 10px;
-  line-height: 13px;
-  color: #f9fbfd;
-  cursor: pointer;
-}
-
-.booking-form__checkbox-label::before {
-  content: "";
-  display: block;
-  min-width: 18px;
-  height: 18px;
-  margin-right: 5px;
-  background-color: #f9fbfd;
-  cursor: pointer;
-}
-
-.booking-form__checkbox-label::after {
-  position: absolute;
-  left: 9px;
-  top: 33%;
-  width: 10px;
-  height: 6px;
-  border-bottom: 2px solid #101a56;
-  border-left: 2px solid #101a56;
-  -webkit-transform: translate(-50%) rotate(-45deg);
-  -ms-transform: translate(-50%) rotate(-45deg);
-  transform: translate(-50%) rotate(-45deg);
-}
-
-.booking-form__checkbox:checked + .booking-form__checkbox-label::after {
-  content: "";
-}
-
-.booking-form__button {
-  border: none;
-  font-family: "Montserrat SemiBold", "Arial", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
-  color: #011c40;
-  padding: 11px 0;
-  cursor: pointer;
-}
-
 .contacts__inner {
   display: -ms-grid;
   display: grid;
@@ -1935,6 +1939,10 @@ button,
   width: 100%;
   height: 100%;
   min-height: 306px;
+  background-image: url("../img/map.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .address {
@@ -2195,6 +2203,10 @@ button,
 
   .card__content {
     height: 86.5%;
+  }
+
+  .card__link {
+    width: 77.6923076923%;
   }
 
   .webp-true .booking {
@@ -2527,8 +2539,12 @@ button,
     left: 25px;
   }
 
+  .card {
+    padding: 31px 25px;
+  }
+
   .card__link {
-    width: 77.3462783172%;
+    width: 81.5533980583%;
   }
 
   .webp-true .booking {
@@ -2578,18 +2594,18 @@ button,
     margin: 0 0 29px 0;
   }
 
-  .booking-form__input:last-of-type {
+  .booking-form input:last-of-type {
     margin-bottom: 17px;
+  }
+
+  .booking-form label::before {
+    min-width: 20px;
+    height: 20px;
+    margin-right: 8px;
   }
 
   .booking-form__checkbox-wrapper {
     margin-bottom: 27px;
-  }
-
-  .booking-form__checkbox-label::before {
-    min-width: 20px;
-    height: 20px;
-    margin-right: 8px;
   }
 
   .contacts__inner {

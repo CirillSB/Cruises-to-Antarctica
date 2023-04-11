@@ -26,22 +26,22 @@
               </svg>
               <ul class="navigation__list">
                 <li class="navigation__item">
-                  <a href="#advantages" class="navigation__link">
+                  <a href="#advantages" class="navigation__link" data-link>
                     Преимущества
                   </a>
                 </li>
                 <li class="navigation__item">
-                  <a href="#" class="navigation__link">
+                  <a href="#" class="navigation__link" data-link>
                     Направления
                   </a>
                 </li>
                 <li class="navigation__item">
-                  <a href="#catalog" class="navigation__link">
+                  <a href="#catalog" class="navigation__link" data-link>
                     Ближайшие круизы
                   </a>
                 </li>
                 <li class="navigation__item">
-                  <a href="" class="navigation__link">
+                  <a href="#contacts" class="navigation__link" data-link>
                     Контакты
                   </a>
                 </li>
@@ -576,29 +576,29 @@
               </p>
             </div>
             <div class="booking__form-wrapper">
-              <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+              <form class="booking-form" action="https://echo.htmlacademy.ru/" method="POST" autocomplete="off">
                 <p>
                   Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время
                 </p>
-                <input class="booking-form__input" id="user-name" type="text" placeholder="Имя">
+                <input id="user-name" type="text" name="name" placeholder="Имя" required>
                 <label class="visually-hidden" for="user-name">
                   Имя пользователя
                 </label>
-                <input class="booking-form__input" id="user-phone" type="tel" placeholder="Телефон">
+                <input id="user-phone" type="tel" name="phone" placeholder="Телефон" data-tel-input required>
                 <label class="visually-hidden" for="user-phone">
                   Телефон пользователя
                 </label>
-                <input class="booking-form__input" id="user-email" type="email" placeholder="Email">
+                <input id="user-email" type="email" name="email" placeholder="Email" required>
                 <label class="visually-hidden" for="user-email">
                   Почта пользователя
                 </label>
                 <div class="booking-form__checkbox-wrapper">
-                  <input class="booking-form__checkbox" id="user-checkbox" type="checkbox" placeholder="Телефон" required>
-                  <label class="booking-form__checkbox-label" for="user-checkbox">
+                  <input id="user-checkbox" type="checkbox" name="checkbox" placeholder="Телефон" required>
+                  <label for="user-checkbox">
                     Я&nbsp;согласен на&nbsp;обработку <br class="only-mobile-visible">моих персональных данных
                   </label>
                 </div>
-                <button class="booking-form__button" type="submit">
+                <button type="submit" name="button">
                   Оставить заявку
                 </button>
               </form>
@@ -606,7 +606,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts__inner">
             <div class="contacts__map-wrapper">
@@ -655,7 +655,7 @@
                 </a>
               </li>
               <li class="main-footer-navigation__item">
-                <a href="#" class="main-footer-navigation__link">
+                <a href="#contacts" class="main-footer-navigation__link">
                   Контакты
                 </a>
               </li>
@@ -702,9 +702,9 @@
       </div>
     </footer>
   </div>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=726b8561-cba3-487c-a8b4-e3e92f1591d0&lang=ru_RU" type="text/javascript"></script>
-  <script src="js/vendor.min.js"></script>
+  
   <script src="js/main.min.js"></script>
+  <script async src="https://api-maps.yandex.ru/2.1/?apikey=726b8561-cba3-487c-a8b4-e3e92f1591d0&lang=ru_RU" type="text/javascript"></script>
 </body>
 
 </html>

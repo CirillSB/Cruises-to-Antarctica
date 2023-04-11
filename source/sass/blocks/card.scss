@@ -13,6 +13,10 @@
   @include vp-1023 {
     padding: 31px 36px;
   }
+
+  @include vp-767 {
+    padding: 31px 25px;
+  }
 }
 
 .card__content {
@@ -66,7 +70,11 @@
   text-align: center;
   padding: 10px 0 9px;
 
+  @include vp-1023 {
+    width: calc(202 / 260 * 100%);
+  }
+
   @include vp-767 {
-    width: calc(239 / 309 * 100%);
+    width: calc(252 / 309 * 100%);
   }
 }
