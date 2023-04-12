@@ -1,12 +1,6 @@
 import {
   iosVhFix
 } from './utils/ios-vh-fix';
-// import {
-//   initModals
-// } from './modules/modals/init-modals';
-// import {
-//   Form
-// } from './modules/form-validate/form';
 import {
   showLogo
 } from './modules/show-logo';
@@ -41,10 +35,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
   iosVhFix();
   // Modules
-  initLoadImages();
   showLogo();
   showMenu();
-
 
   // ---------------------------------
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -54,10 +46,12 @@ window.addEventListener('DOMContentLoaded', () => {
     // const form = new Form();
     // window.form = form;
     // form.init();
+    initLoadImages();
     setFocusCard();
     showCards();
     setMaskTel();
     initMap();
+
   });
 });
 

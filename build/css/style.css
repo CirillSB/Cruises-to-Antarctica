@@ -1954,6 +1954,10 @@ input[type=checkbox]:checked + label::after {
   background-repeat: no-repeat;
 }
 
+.map.lazy {
+  background-image: none;
+}
+
 .address {
   padding-top: 75px;
   padding-left: 10.7%;

@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>Cruises to Antarctica</title>
+   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="">
+   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -612,7 +614,7 @@
         <div class="container">
           <div class="contacts__inner">
             <div class="contacts__map-wrapper">
-              <div class="map" id="map">
+              <div class="map lazy" id="map">
               </div>
             </div>
             <div class="address">
@@ -705,8 +707,8 @@
     </footer>
   </div>
   
-  <script src="js/main.min.js"></script>
-  <script async src="https://api-maps.yandex.ru/2.1/?apikey=726b8561-cba3-487c-a8b4-e3e92f1591d0&lang=ru_RU"></script>
+  <script src="js/main.min.js" async=""></script>
+  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=726b8561-cba3-487c-a8b4-e3e92f1591d0&lang=ru_RU" async=""></script> -->
 </body>
 
 </html>

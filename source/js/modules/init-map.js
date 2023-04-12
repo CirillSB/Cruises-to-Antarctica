@@ -1,4 +1,5 @@
 export const initMap = () => {
+
   ymaps.ready(init);
 
   function init() {
