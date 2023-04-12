@@ -1,5 +1,8 @@
+
 .webp-true .advantages {
+  background-color: $color-PattensBlue;
   background-image: url("../img/background2-desktop@1x.webp");
+
 
   @include retina {
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -56,6 +59,10 @@
       }
     }
   }
+}
+
+.advantages.lazy {
+  background-image: none;
 }
 
 .advantages {

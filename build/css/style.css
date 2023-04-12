@@ -1543,11 +1543,16 @@ button,
 }
 
 .webp-true .advantages {
+  background-color: #d9e7f4;
   background-image: url("../img/background2-desktop@1x.webp");
 }
 
 .webp-false .advantages {
   background-image: url("../img/background2-desktop@1x.jpg");
+}
+
+.advantages.lazy {
+  background-image: none;
 }
 
 .advantages {
@@ -1721,6 +1726,10 @@ button,
 
 .webp-false .booking {
   background-image: url("../img/background3-desktop@1x.jpg");
+}
+
+.booking.lazy {
+  background-image: none;
 }
 
 .booking {
