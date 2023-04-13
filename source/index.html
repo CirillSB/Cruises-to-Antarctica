@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Описание проекта">
   <title>Cruises to Antarctica</title>
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -82,12 +85,12 @@
               <source type="image/webp" media="(min-width: 1024px)" srcset="img/penguins-desktop@1x.webp 1x, img/penguins-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/penguins-tablet@1x.webp 1x, img/penguins-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/penguins-mobile@1x.webp 1x, img/penguins-mobile@2x.webp 2x">
-              <source media="(min-width: 1024px)" srcset="img/penguins-desktop@1x.jpg 1x, img/penguins-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/penguins-tablet@1x.jpg 1x, img/penguins-tablet@2x.jpg 2x">
-              <img class="travels__image" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/penguins-mobile@1x.jpg" srcset="img/penguins-mobile@2x.jpg 2x" width="560" height="301" alt="Три пингвина гуляют по снегу.">
+              <source media="(min-width: 1024px)" srcset="img/penguins-desktop@1x.png 1x, img/penguins-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/penguins-tablet@1x.png 1x, img/penguins-tablet@2x.png 2x">
+              <img class="travels__image" loading="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAQAAAA3fa6RAAAADklEQVR42mNkAANGCAUAACMAA2w/AMgAAAAASUVORK5CYII=" data-src="img/penguins-mobile@1x.png" srcset="img/penguins-mobile@2x.png 2x" width="560" height="301" alt="Три пингвина гуляют по снегу.">
             </picture>
             <noscript>
-              <img src="img/penguins-mobile@1x.jpg" width="560" height="301" alt="Три пингвина гуляют по снегу.">
+              <img src="img/penguins-mobile@1x.png" width="560" height="301" alt="Три пингвина гуляют по снегу.">
             </noscript>
           </div>
         </div>
@@ -704,7 +707,6 @@
       </div>
     </footer>
   </div>
-  
   <script src="js/main.min.js"></script>
   <script async src="https://api-maps.yandex.ru/2.1/?apikey=726b8561-cba3-487c-a8b4-e3e92f1591d0&lang=ru_RU"></script>
 </body>
