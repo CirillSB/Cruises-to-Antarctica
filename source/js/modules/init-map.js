@@ -1,12 +1,18 @@
-
-setTimeout(() => {
-  let element = document.createElement('script');
-  element.src = 'https://api-maps.yandex.ru/2.1/?apikey=726b8561-cba3-487c-a8b4-e3e92f1591d0&lang=ru_RU';
-  document.body.appendChild(element);
-}, 2000);
+const script = document.createElement('script');
+let ok = false;
+window.addEventListener('scroll', () => {
+  if (ok === false) {
+    ok = true;
+    setTimeout(() => {
+      script.src = 'https://api-maps.yandex.ru/2.1/?apikey=726b8561-cba3-487c-a8b4-e3e92f1591d0&lang=ru_RU';
+      document.body.appendChild(script);
+    }, 1000);
+  }
+});
 
 const initMap = () => {
-  setTimeout(function () {
+  script.onload = () => {
+
     ymaps.ready(init);
 
     function init() {
@@ -65,7 +71,7 @@ const initMap = () => {
             .add(myPlacemarkWithContent);
       });
     }
-  }, 2200);
+  };
 };
 
 export {
