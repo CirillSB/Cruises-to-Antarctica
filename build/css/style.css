@@ -1430,6 +1430,7 @@ button,
   grid-template-columns: repeat(3, auto);
   grid-auto-flow: row;
   grid-column-gap: 27px;
+  grid-row-gap: 10px;
 }
 
 .socials__item {
@@ -1919,6 +1920,10 @@ button,
 
 input[type=checkbox]:checked + label::after {
   content: "";
+}
+
+input[type=checkbox]:focus + label {
+  outline: 1px solid #f9fbfd;
 }
 
 .booking-form__checkbox-wrapper {
@@ -2762,6 +2767,10 @@ input[type=checkbox]:checked + label::after {
     opacity: 1;
     visibility: visible;
   }
+
+  .booking-form button.focus-visible:focus:hover:not(.focus-visible) {
+    opacity: 0.5;
+  }
 }
 
 @media (hover: hover) and (hover: hover) {
@@ -2783,6 +2792,10 @@ input[type=checkbox]:checked + label::after {
   .catalog-list__item:hover:not(.focus-visible):hover:not(.focus-visible) .card {
     opacity: 1;
     visibility: visible;
+  }
+
+  .booking-form button:hover:not(.focus-visible):hover:not(.focus-visible) {
+    opacity: 0.5;
   }
 }
 

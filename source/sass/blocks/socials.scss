@@ -6,6 +6,7 @@
   grid-template-columns: repeat(3, auto);
   grid-auto-flow: row;
   grid-column-gap: 27px;
+  grid-row-gap: 10px;
 
   @include vp-1023 {
     grid-column-gap: 18px;

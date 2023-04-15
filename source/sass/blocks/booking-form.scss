@@ -98,11 +98,23 @@
     color: $color-Midnight;
     padding: 11px 0;
     cursor: pointer;
+
+    @include hover-focus {
+      @media (hover: hover) {
+        &:hover:not(.focus-visible) {
+          opacity: 0.5;
+        }
+      }
+    }
   }
 }
 
 input[type="checkbox"]:checked + label::after {
   content: "";
+}
+
+input[type="checkbox"]:focus + label {
+  outline: 1px solid $color-BlackSqueeze;
 }
 
 .booking-form__checkbox-wrapper {
