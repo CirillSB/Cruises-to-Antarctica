@@ -57,16 +57,16 @@
   }
 
   &__content {
-    position: relative;
-
-    width: 600px;
-    padding: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
 
     background-color: $color-default-white;
 
     @include vp-767 {
-      width: 100%;
-      padding: 20px;
+      width: calc(284 / 320 * 100%);
+      height: 568px;
+      padding: 20px 15px;
     }
   }
 
@@ -113,7 +113,6 @@
     transform: scale(1);
     visibility: visible;
     opacity: 1;
-
     pointer-events: auto;
   }
 }

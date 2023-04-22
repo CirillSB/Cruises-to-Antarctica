@@ -50,7 +50,7 @@ $tf-default:                        ease;
 $trans-default:                     0.3s $tf-default;
 
 // если требуется изинг отличный от $tf-default, то переменную называем не цифрой
-$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+$trans-modal:                       6s cubic-bezier(0.55, 0, 0.1, 1);
 
 $trans-600:                         0.6s $tf-default;
 
