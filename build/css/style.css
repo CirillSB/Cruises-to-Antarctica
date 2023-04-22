@@ -636,7 +636,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 0 103px;
 }
@@ -1397,7 +1397,7 @@ button,
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  padding-left: 40px;
+  padding-left: 3.4482758621%;
 }
 
 .main-footer-navigation__list {
@@ -1461,6 +1461,7 @@ button,
   color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 0 12px 0;
+  padding: 0 0 0 95px;
 }
 
 .webp-true .promo {
@@ -1472,7 +1473,7 @@ button,
 }
 
 .promo {
-  padding: 270px 0 286px 198px;
+  padding: 270px 0 286px;
   background-color: #003770;
   background-position: 50% 100%;
   background-size: cover;
@@ -1481,6 +1482,7 @@ button,
 
 .promo p {
   margin: 0;
+  padding: 0 0 0 95px;
   font-family: "Montserrat Regular", "Arial", sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -1914,6 +1916,7 @@ button,
   font-size: 14px;
   line-height: 21px;
   color: #011c40;
+  background-color: #f9fbfd;
   padding: 11px 0;
   cursor: pointer;
 }
@@ -2112,6 +2115,7 @@ input[type=checkbox]:focus + label {
   .main-title {
     font-size: 50px;
     line-height: 61px;
+    padding: 0;
   }
 
   .webp-true .promo {
@@ -2123,12 +2127,13 @@ input[type=checkbox]:focus + label {
   }
 
   .promo p {
+    padding: 0;
     font-size: 18px;
     line-height: 22px;
   }
 
   .promo {
-    padding: 268px 45px 275px;
+    padding: 268px 0 275px;
   }
 
   .travels__inner {
@@ -2464,7 +2469,7 @@ input[type=checkbox]:focus + label {
   }
 
   .promo {
-    padding: 176px 15px 179px;
+    padding: 176px 0 179px;
   }
 
   .travels__inner {

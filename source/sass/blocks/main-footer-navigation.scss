@@ -2,7 +2,8 @@
   flex-grow: 1;
   display: flex;
   justify-content: flex-start;
-  padding-left: 40px;
+  // padding-left: 40px;
+  padding-left: calc(40 / 1160 * 100%);
 
   @include vp-1023 {
     padding-left: 25px;
