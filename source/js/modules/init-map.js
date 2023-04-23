@@ -6,7 +6,7 @@ window.addEventListener('scroll', () => {
     setTimeout(() => {
       script.src = 'https://api-maps.yandex.ru/2.1/?apikey=726b8561-cba3-487c-a8b4-e3e92f1591d0&lang=ru_RU';
       document.body.appendChild(script);
-    }, 2000);
+    }, 1000);
   }
 });
 
