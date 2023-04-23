@@ -21,44 +21,36 @@
           <svg class="logo" width="70" height="38" data-header-logo>
             <use class="logo__image" xlink:href="img/sprite.svg#logo-desktop"></use>
           </svg>
-          <nav class="navigation navigation--header">
+          <nav class="navigation">
+            <div class="overlay visually-hidden"></div>
             <div class="navigation__inner">
               <svg class="only-mobile-visible" width="42" height="22">
                 <use xlink:href="img/sprite.svg#logo-modal"></use>
               </svg>
               <ul class="navigation__list">
                 <li class="navigation__item">
-                  <a href="#advantages" class="navigation__link">
+                  <a href="#advantages" class="navigation__link" data-link>
                     Преимущества
                   </a>
                 </li>
                 <li class="navigation__item">
-                  <a href="#" class="navigation__link">
+                  <a href="#" class="navigation__link" data-link>
                     Направления
                   </a>
                 </li>
                 <li class="navigation__item">
-                  <a href="#catalog" class="navigation__link">
+                  <a href="#catalog" class="navigation__link" data-link>
                     Ближайшие круизы
                   </a>
                 </li>
                 <li class="navigation__item">
-                  <a href="#contacts" class="navigation__link">
+                  <a href="#contacts" class="navigation__link" data-link>
                     Контакты
                   </a>
                 </li>
               </ul>
             </div>
-<!--             <button class="menu-button only-mobile-visible">
-              <span class="visually-hidden">
-                Кнопка показать или скрыть меню
-              </span>
-              <svg class="burger" width="24" height="12">
-                <use class="burger__image" xlink:href="img/sprite.svg#burger"></use>
-              </svg>
-            </button> -->
-          </nav>
-          <button class="menu-button only-mobile-visible" data-open-modal>
+            <button class="menu-button only-mobile-visible">
               <span class="visually-hidden">
                 Кнопка показать или скрыть меню
               </span>
@@ -66,6 +58,7 @@
                 <use class="burger__image" xlink:href="img/sprite.svg#burger"></use>
               </svg>
             </button>
+          </nav>
         </div>
       </div>
     </header>
@@ -645,62 +638,6 @@
           </div>
         </div>
       </section>
-
-  <div class="modal modal--preload" id="feedback" data-modal aria-modal>
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-
-          <nav class="navigation navigation--modal">
-            <div class="navigation__inner">
-              <svg class="only-mobile-visible" width="42" height="22">
-                <use xlink:href="img/sprite.svg#logo-modal"></use>
-              </svg>
-              <ul class="navigation__list">
-                <li class="navigation__item">
-                  <a href="#advantages" class="navigation__link" data-link>
-                    Преимущества
-                  </a>
-                </li>
-                <li class="navigation__item">
-                  <a href="#" class="navigation__link" data-link>
-                    Направления
-                  </a>
-                </li>
-                <li class="navigation__item">
-                  <a class="navigation__link" href="#catalog" data-link>
-                    Ближайшие круизы
-                  </a>
-                </li>
-                <li class="navigation__item">
-                  <a class="navigation__link" href="#contacts" data-link>
-                    Контакты
-                  </a>
-                </li>
-              </ul>
-            </div>
-<!--             <button class="menu-button only-mobile-visible">
-              <span class="visually-hidden">
-                Кнопка показать или скрыть меню
-              </span>
-              <svg class="burger" width="24" height="12">
-                <use class="burger__image" xlink:href="img/sprite.svg#burger"></use>
-              </svg>
-            </button> -->
-          </nav>
-
-
-        <!-- <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal data-focusable-element tabindex="6">
-          <svg width="20" height="20">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button> -->
-
-      </div>
-    </div>
-  </div>
-
-
     </main>
     <footer class="main-footer">
       <div class="container">
@@ -711,7 +648,7 @@
           <nav class="main-footer-navigation">
             <ul class="main-footer-navigation__list">
               <li class="main-footer-navigation__item">
-                <a class="main-footer-navigation__link" href="#advantages" >
+                <a href="#advantages" class="main-footer-navigation__link">
                   Преимущества
                 </a>
               </li>

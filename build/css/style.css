@@ -2019,6 +2019,16 @@ input[type=checkbox]:focus + label {
   margin-right: 5px;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #011c40;
+  opacity: 0.5;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2364,8 +2374,31 @@ input[type=checkbox]:focus + label {
     padding: 20px 0;
   }
 
-  .navigation--header {
-    display: none;
+  .navigation__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 89.0625%;
+    min-height: 100vh;
+    padding: 20px 30px 20px 15px;
+    background-color: #f9fbfd;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    z-index: 100;
   }
 
   .navigation__inner--js-active {
@@ -2373,7 +2406,7 @@ input[type=checkbox]:focus + label {
   }
 
   .navigation__inner svg {
-    margin-bottom: 31px;
+    margin-bottom: 38px;
   }
 
   .navigation__list {

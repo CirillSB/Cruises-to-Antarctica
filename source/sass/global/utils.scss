@@ -7,6 +7,19 @@
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 
+  // &--darkened {
+  //   &::before {
+  //     content: "";
+  //     position: fixed;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+  //     background-color: $color-Midnight;
+  //     opacity: 0.5;
+  //   }
+  // }
+
   .header,
   .footer {
     flex-shrink: 0;
