@@ -1475,7 +1475,7 @@ button,
 .promo {
   padding: 270px 0 286px;
   background-color: #003770;
-  background-position: 50% 100%;
+  background-position: 0 70%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2070,6 +2070,13 @@ input[type=checkbox]:focus + label {
   }
 */
 
+@media (max-width: 1279px) {
+  .catalog-list {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 45px;
@@ -2223,7 +2230,6 @@ input[type=checkbox]:focus + label {
     grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (auto)[4];
     grid-template-rows: repeat(4, auto);
-    grid-column-gap: 30px;
   }
 
   .catalog-list__item p {

@@ -6,10 +6,13 @@
   grid-row-gap: 30px;
   grid-auto-flow: row;
 
+  @include vp-1279 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   @include vp-1023 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
-    grid-column-gap: 30px;
   }
 
   @include vp-767 {
